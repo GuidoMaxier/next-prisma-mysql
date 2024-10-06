@@ -1,6 +1,7 @@
 "use client"; // Indica que es un Client Component
 
 import { useEffect, useState } from 'react';
+export const dynamic = 'force-dynamic';
 
 const RestaurantDetail = ({ params }) => {
     const { id } = params; // Obtén el id directamente desde params
@@ -37,6 +38,8 @@ const RestaurantDetail = ({ params }) => {
     if (error) return <div>Error: {error}</div>;
 
     if (!restaurante) return <div>No se encontró el restaurante.</div>;
+
+    
 
     return (
         <div>
