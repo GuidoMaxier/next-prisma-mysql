@@ -2,6 +2,8 @@ import React from 'react'
 import CrearRestaurante from '../components/CrearRestaurante.jsx'
 import Restaurantes from '../components/Restaurantes.jsx'
 
+export const dynamic = 'force-dynamic';
+
 function Homepage() {
   return (
     <div>
