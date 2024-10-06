@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import CardRestaurante from './CardRestaurante'
+export const dynamic = 'force-dynamic';
 
 export default function Restaurantes() {
   const [restaurantes, setRestaurantes] = useState([])
