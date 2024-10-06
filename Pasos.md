@@ -9,6 +9,7 @@ npm install @prisma/client
 npx prisma init
 
 Paso 3:
+npm install prisma sqlite3
 Definir los Modelos
 migrate: npx prisma migrate dev --name init
 
