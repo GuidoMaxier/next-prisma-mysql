@@ -14,7 +14,7 @@ export async function GET() {
     return NextResponse.json(restaurantes, { status: 200 });
   } catch (error) {
     console.error(error);
-    return NextResponse.json({ error: 'Error al obtener los restaurantes' }, { status: 500 });
+    return NextResponse.json({ error: 'Error al obtener los restaurantes ' + error}, { status: 500 });
   }
 }
 
