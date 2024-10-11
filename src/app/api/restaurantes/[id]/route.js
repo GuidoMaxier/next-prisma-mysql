@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 
 const prisma = new PrismaClient();
 
-// Handler para la solicitud GET (obtener un restaurante por ID)
+// Handler GET (obtener un restaurante por ID)
 export async function GET(req, { params }) {
   const { id } = params;
 
@@ -25,7 +25,7 @@ export async function GET(req, { params }) {
     return NextResponse.json({ error: 'Error al obtener el restaurante' }, { status: 500 });
   }
 }
-// Handler para la solicitud PUT (actualizar un restaurante por ID)
+// Handler  PUT (actualizar un restaurante por ID)
 export async function PUT(req, { params }) {
   const { id } = params;
   const body = await req.json();
@@ -43,7 +43,7 @@ export async function PUT(req, { params }) {
     return NextResponse.json({ error: 'Error al actualizar el restaurante' }, { status: 500 });
   }
 }
-// Handler para la solicitud DELETE (eliminar un restaurante por ID)
+// Handler DELETE (eliminar un restaurante por ID)
 export async function DELETE(req, { params }) {
   const { id } = params;
 

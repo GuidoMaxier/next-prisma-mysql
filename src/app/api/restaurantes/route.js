@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 
 const prisma = new PrismaClient();
 
-// Handler para la solicitud GET
+// Handler GET
 export async function GET() {
   try {
     const restaurantes = await prisma.restaurante.findMany({
@@ -18,7 +18,7 @@ export async function GET() {
   }
 }
 
-// Handler para la solicitud POST
+// Handler POST
 export async function POST(req) {
   try {
     const body = await req.json(); // Parsear el cuerpo de la solicitud
